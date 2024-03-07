@@ -9,7 +9,7 @@
 
 > _Note_: Remember to `git add`, `git commit` and `git push` regularly
 
-Using the [Tuner API that you built](https://github.com/joinpursuit/tuner-api/blob/main/README.md), you are going to create a frontend-only app.
+Using the Tunr API that you built, you are going to create the frontend to this app.
 
 Don't forget to keep your back-end API running during this build.
 
@@ -94,11 +94,8 @@ Make a link to the edit form on the show page
 
 ### Bonuses
 
-- Style the app
-  - Look into the [holy grail layout](https://philipwalton.github.io/solved-by-flexbox/demos/holy-grail/)
+- Style the app using vanilla CSS, bootstrap, react-bootstrap, tailwind or another framework of your choice
+- Make the app responsive
 - It's annoying to have to use the edit form in order to update whether a song `is_favorite` or not. Make the star ⭐️ clickable from the Index page to toggle the value (both front and back end)
-- Use react-bootstrap
-- Use react-transition-group to transition between pages [Demo](https://reactrouter.com/web/example/animated-transitions)
-- write your own tests addtional tests for any new features you implement
 - add a 404 page
 - add functionality that when a user presses the delete button a confirmation appears first
