@@ -1,17 +1,26 @@
-# Tuner Front-End
+# Tuner FrontEnd
 
 ![](https://media4.giphy.com/media/4T7zBzdeNEtjThYDWn/giphy.gif?cid=790b76114ee03ef7f860492a9083d77f86191a7bf340002c&rid=giphy.gif&ct=g)
 
 ## Getting Started
 
-- keep the back-end running, open a new tab and navigate out of the back-end repository
-- `fork` and `clone` this repository
+- keep the backend running
 
-> _Note_: Remember to `git add`, `git commit` and `git push` regularly
+- `fork` this repository
+
+- `clone` this repo inside the `tunr-fullstack-lab`
+
+- you may change the name of the repo to `tunr-frontend` if you like
+
+- `cd` into the repo
+
+- `npm install`
+  `tunr-fullstack-lab`
+  > _Note_: Remember to `git add`, `git commit` and `git push` regularly
 
 Using the Tunr API that you built, you are going to create the frontend to this app.
 
-Don't forget to keep your back-end API running during this build.
+Don't forget to keep your backend API running during this build.
 
 #### Nav Bar
 
