@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 
 function Song({ song }) {
     return (
@@ -10,7 +11,15 @@ function Song({ song }) {
                 )}
             </td>
             <td>
+            <Link to={`${song.id}`}>
                 {song.name}
+            </Link>
+            </td>
+            <td>
+                {song.artist}
+            </td>
+            <td>
+                {song.time}
             </td>
         </tr>
     );
