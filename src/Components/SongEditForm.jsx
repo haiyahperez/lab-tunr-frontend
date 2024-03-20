@@ -14,6 +14,18 @@ function SongEditForm() {
         is_favorite: false
     });
 
+    useEffect(() => {
+        fetch(`${API}/songs/${id}`)
+        .then((res) => {
+            return res.json();
+          })
+          .then((data) => {
+            console.log(data);
+            setSong(data);
+          })
+          .catch((error) => console.error(error));
+      }, [id]);
+
     const editSong = () => {
         fetch(`${API}/songs/${id}`, {
             method: "PUT",
@@ -48,7 +60,6 @@ function SongEditForm() {
                     value={song.name}
                     type="text"
                     onChange={handleTextChange}
-                    placeholder="Song Name"
                     required
                 />
                 <label htmlFor="artist">Artist:</label>
@@ -57,25 +68,22 @@ function SongEditForm() {
                     value={song.artist}
                     type="text"
                     onChange={handleTextChange}
-                    placeholder="Artist"
                     required
                 />
-                 <label htmlFor="Album">Album:</label>
+                 <label htmlFor="album">Album:</label>
                 <input
                     id="album"
                     value={song.album}
                     type="text"
                     onChange={handleTextChange}
-                    placeholder="Album Name"
                     required
                 />
-                 <label htmlFor="time">Time:</label>
+                 <label htmlFor="time">Duration:</label>
                 <input
                     id="time"
                     value={song.time}
                     type="text"
                     onChange={handleTextChange}
-                    placeholder="time"
                     required
                 />
                  <label htmlFor="is_favorite">Favorite:</label>

@@ -70,7 +70,7 @@ function SongNewForm() {
                     placeholder="Album Name"
                     required
                 />
-                 <label htmlFor="time">Time:</label>
+                 <label htmlFor="time">Duration:</label>
                 <input
                     id="time"
                     value={song.time}

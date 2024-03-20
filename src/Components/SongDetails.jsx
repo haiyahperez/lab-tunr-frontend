@@ -38,7 +38,7 @@ function SongDetails() {
                 ) : (
                     <span>❌</span>
                 )}</h2>
-            <button>Edit</button>
+            <button onClick={ () => navigate("/songs/:id/edit")}>Edit</button>
             <button onClick={ () => navigate("/songs") }>Back</button>
             <button onClick={deleteSong}>Delete</button>
         </div>
